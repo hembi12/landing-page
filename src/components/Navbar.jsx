@@ -287,7 +287,7 @@ const Navbar = () => {
                                     <FaChevronDown className="ml-2" />
                                 </button>
                                 {dropdownOpen && (
-                                    <div className="absolute left-0 mt-2 text-black dark:text-white rounded-lg shadow-lg lg:w-40 w-auto">
+                                    <div className="absolute bg-gray-100 dark:bg-gray-700 left-0 mt-2 text-black dark:text-white rounded-lg shadow-lg lg:w-40 w-auto">
                                         <button
                                             onClick={() => changeLanguage('es')}
                                             className="flex items-center px-4 py-2 hover:bg-gray-200 dark:hover:bg-gray-600 hover:font-bold hover:text-blue-500 dark:hover:text-blue-400 text-left w-full"
@@ -365,7 +365,7 @@ const Navbar = () => {
                             <FaChevronDown className="ml-2" />
                         </button>
                         {mobileDropdownOpen && (
-                            <div className="text-gray-600 dark:text-gray-300 rounded-lg shadow-lg">
+                            <div className="text-black dark:text-white rounded-lg shadow-lg">
                                 <button
                                     onClick={() => changeLanguage('es')}
                                     className="flex items-center px-4 py-2 hover:bg-gray-200 dark:hover:bg-gray-600 hover:font-bold hover:text-blue-500 dark:hover:text-blue-400 text-left w-full"
@@ -459,7 +459,7 @@ const Navbar = () => {
                             <FaChevronDown className="ml-2" />
                         </button>
                         {mobileDropdownOpen && (
-                            <div className="text-gray-600 dark:text-gray-300 rounded-lg shadow-lg">
+                            <div className="text-black dark:text-white rounded-lg shadow-lg">
                                 <button
                                     onClick={() => changeLanguage('es')}
                                     className="flex items-center px-4 py-2 hover:bg-gray-200 dark:hover:bg-gray-600 hover:font-bold hover:text-blue-500 dark:hover:text-blue-400 text-left w-full"
