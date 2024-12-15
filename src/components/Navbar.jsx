@@ -1,4 +1,5 @@
 // Navbar.jsx con Modo Oscuro, Botón de Toggle al lado de "HM" y Menú Móvil Visible en < 1024px
+// Se reemplaza la sección "about" por "WebSolutions" y ahora "skills" por "testimonials"
 
 import React, { useState, useEffect, useRef } from "react";
 import { FaChevronDown, FaMoon, FaSun } from "react-icons/fa"; // Importa iconos para el toggle
@@ -15,7 +16,6 @@ const Navbar = () => {
     const [mobileDropdownOpen, setMobileDropdownOpen] = useState(false);
     const [activeSection, setActiveSection] = useState("");
     const [scrolled, setScrolled] = useState(false);
-
     const [notification, setNotification] = useState(null); // Estado para notificaciones
 
     const [isDarkMode, setIsDarkMode] = useState(false); // Estado para modo oscuro
@@ -51,7 +51,7 @@ const Navbar = () => {
     useEffect(() => {
         if (isPrivacyPolicy) return;
         const handleScroll = () => {
-            const sections = ["hero", "about", "skills", "projects", "Resume", "contact"];
+            const sections = ["hero", "websolutions", "testimonials", "faq", "resume", "contact"];
             const scrollPosition = window.scrollY;
 
             sections.forEach((section) => {
@@ -138,12 +138,12 @@ const Navbar = () => {
                 {/* Contenedor para "HM" y el botón de modo oscuro */}
                 <div className="flex items-center">
                     <div className="bg-gradient-to-r from-[#007AFF] via-[#AF52DE] to-[#FF9500] bg-clip-text text-transparent text-2xl font-bold">
-                        HM
+                        Senda
                     </div>
                     {/* Botón para alternar modo oscuro */}
                     <button
                         onClick={toggleDarkMode}
-                        className="ml-4 flex items-center text-gray-400 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-500 focus:outline-none"
+                        className="ml-4 flex items-center text-gray-400 dark:text-gray-200 hover:text-blue-500 dark:hover:text-orange-400 focus:outline-none"
                         aria-label="Toggle Dark Mode"
                     >
                         {isDarkMode ? <FaSun className="w-4 h-4" /> : <FaMoon className="w-4 h-4" />}
@@ -167,7 +167,7 @@ const Navbar = () => {
                                     <div className="absolute left-0 mt-2 text-black dark:text-white rounded-lg shadow-lg lg:w-40 w-auto">
                                         <button
                                             onClick={() => changeLanguage('es')}
-                                            className="flex items-center px-4 py-2 hover:bg-gray-200 dark:hover:bg-gray-600 hover:font-bold hover:text-blue-500 dark:hover:text-blue-400 text-left w-full"
+                                            className="flex items-center px-4 py-2 hover:bg-gray-200 dark:hover:bg-gray-600 hover:font-bold hover:text-blue-500 dark:hover:text-orange-400 text-left w-full"
                                         >
                                             <img
                                                 src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/mx.svg"
@@ -178,7 +178,7 @@ const Navbar = () => {
                                         </button>
                                         <button
                                             onClick={() => changeLanguage('en')}
-                                            className="flex items-center px-4 py-2 hover:bg-gray-200 dark:hover:bg-gray-600 hover:font-bold hover:text-blue-500 dark:hover:text-blue-400 text-left w-full"
+                                            className="flex items-center px-4 py-2 hover:bg-gray-200 dark:hover:bg-gray-600 hover:font-bold hover:text-blue-500 dark:hover:text-orange-400 text-left w-full"
                                         >
                                             <img
                                                 src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/us.svg"
@@ -195,7 +195,7 @@ const Navbar = () => {
                             {/* Botón de menú móvil */}
                             <button
                                 onClick={() => setIsOpen(!isOpen)}
-                                className="text-black dark:text-white hover:text-blue-500 dark:hover:text-blue-400 focus:outline-none mr-2"
+                                className="text-black dark:text-white hover:text-blue-500 dark:hover:text-orange-400 focus:outline-none mr-2"
                             >
                                 <svg
                                     className="w-6 h-6"
@@ -216,7 +216,6 @@ const Navbar = () => {
                                     />
                                 </svg>
                             </button>
-                            {/* Nota: El botón de modo oscuro ha sido eliminado de esta sección */}
                         </div>
                     </>
                 ) : (
@@ -226,43 +225,43 @@ const Navbar = () => {
                                 href="#hero"
                                 onClick={(e) => { e.preventDefault(); scrollToSection('hero'); }}
                                 className={`hover:text-blue-500 ${
-                                    activeSection === "hero" ? "text-blue-500 font-bold underline" : ""
+                                    activeSection === "hero" ? "text-blue-500 dark:text-orange-400 font-bold underline" : ""
                                 }`}
                             >
                                 {t('home')}
                             </a>
                             <a
-                                href="#about"
-                                onClick={(e) => { e.preventDefault(); scrollToSection('about'); }}
+                                href="#websolutions"
+                                onClick={(e) => { e.preventDefault(); scrollToSection('websolutions'); }}
                                 className={`hover:text-blue-500 ${
-                                    activeSection === "about" ? "text-blue-500 font-bold underline" : ""
+                                    activeSection === "websolutions" ? "text-blue-500 dark:text-orange-400 font-bold underline" : ""
                                 }`}
                             >
-                                {t('about')}
+                                {t('WebSolutions')}
                             </a>
                             <a
-                                href="#skills"
-                                onClick={(e) => { e.preventDefault(); scrollToSection('skills'); }}
+                                href="#testimonials"
+                                onClick={(e) => { e.preventDefault(); scrollToSection('testimonials'); }}
                                 className={`hover:text-blue-500 ${
-                                    activeSection === "skills" ? "text-blue-500 font-bold underline" : ""
+                                    activeSection === "testimonials" ? "text-blue-500 dark:text-orange-400 font-bold underline" : ""
                                 }`}
                             >
-                                {t('skills')}
+                                {t('testimonials')}
                             </a>
                             <a
-                                href="#projects"
-                                onClick={(e) => { e.preventDefault(); scrollToSection('projects'); }}
+                                href="#faq"
+                                onClick={(e) => { e.preventDefault(); scrollToSection('faq'); }}
                                 className={`hover:text-blue-500 ${
-                                    activeSection === "projects" ? "text-blue-500 font-bold underline" : ""
+                                    activeSection === "faq" ? "text-blue-500 dark:text-orange-400 font-bold underline" : ""
                                 }`}
                             >
-                                {t('projects')}
+                                {t('FAQ')}
                             </a>
                             <a
-                                href="#Resume"
-                                onClick={(e) => { e.preventDefault(); scrollToSection('Resume'); }}
+                                href="#resume"
+                                onClick={(e) => { e.preventDefault(); scrollToSection('resume'); }}
                                 className={`hover:text-blue-500 ${
-                                    activeSection === "Resume" ? "text-blue-500 font-bold underline" : ""
+                                    activeSection === "resume" ? "text-blue-500 dark:text-orange-400 font-bold underline" : ""
                                 }`}
                             >
                                 {t('resume')}
@@ -271,7 +270,7 @@ const Navbar = () => {
                                 href="#contact"
                                 onClick={(e) => { e.preventDefault(); scrollToSection('contact'); }}
                                 className={`hover:text-blue-500 ${
-                                    activeSection === "contact" ? "text-blue-500 font-bold underline" : ""
+                                    activeSection === "contact" ? "text-blue-500 dark:text-orange-400 font-bold underline" : ""
                                 }`}
                             >
                                 {t('contact')}
@@ -280,7 +279,7 @@ const Navbar = () => {
                                 <button
                                     onClick={() => setDropdownOpen(!dropdownOpen)}
                                     className={`flex items-center hover:text-blue-500 ${
-                                        dropdownOpen ? "text-blue-500 font-bold underline" : ""
+                                        dropdownOpen ? "text-blue-500 dark:text-orange-400 font-bold underline" : ""
                                     }`}
                                 >
                                     {t('language')}
@@ -290,7 +289,7 @@ const Navbar = () => {
                                     <div className="absolute bg-gray-100 dark:bg-gray-700 left-0 mt-2 text-black dark:text-white rounded-lg shadow-lg lg:w-40 w-auto">
                                         <button
                                             onClick={() => changeLanguage('es')}
-                                            className="flex items-center px-4 py-2 hover:bg-gray-200 dark:hover:bg-gray-600 hover:font-bold hover:text-blue-500 dark:hover:text-blue-400 text-left w-full"
+                                            className="flex items-center px-4 py-2 hover:bg-gray-200 dark:hover:bg-gray-600 hover:font-bold hover:text-blue-500 dark:hover:text-orange-400 text-left w-full"
                                         >
                                             <img
                                                 src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/mx.svg"
@@ -301,7 +300,7 @@ const Navbar = () => {
                                         </button>
                                         <button
                                             onClick={() => changeLanguage('en')}
-                                            className="flex items-center px-4 py-2 hover:bg-gray-200 dark:hover:bg-gray-600 hover:font-bold hover:text-blue-500 dark:hover:text-blue-400 text-left w-full"
+                                            className="flex items-center px-4 py-2 hover:bg-gray-200 dark:hover:bg-gray-600 hover:font-bold hover:text-blue-500 dark:hover:text-orange-400 text-left w-full"
                                         >
                                             <img
                                                 src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/us.svg"
@@ -318,7 +317,7 @@ const Navbar = () => {
                             {/* Botón de menú móvil */}
                             <button
                                 onClick={() => setIsOpen(!isOpen)}
-                                className="text-black dark:text-white hover:text-blue-500 dark:hover:text-blue-400 focus:outline-none mr-2"
+                                className="text-black dark:text-white hover:text-blue-500 dark:hover:text-orange-400 focus:outline-none mr-2"
                             >
                                 <svg
                                     className="w-6 h-6"
@@ -339,7 +338,6 @@ const Navbar = () => {
                                     />
                                 </svg>
                             </button>
-                            {/* Nota: El botón de modo oscuro ha sido eliminado de esta sección */}
                         </div>
                     </>
                 )}
@@ -359,7 +357,7 @@ const Navbar = () => {
                     <div className="relative">
                         <button
                             onClick={() => setMobileDropdownOpen(!mobileDropdownOpen)}
-                            className="block px-4 py-2 hover:bg-gray-200 dark:hover:bg-gray-600 hover:font-bold hover:text-blue-500 dark:hover:text-blue-400 flex items-center justify-between w-full"
+                            className="block px-4 py-2 hover:bg-gray-200 dark:hover:bg-gray-600 hover:font-bold hover:text-blue-500 dark:hover:text-orange-400 flex items-center justify-between w-full"
                         >
                             {t('language')}
                             <FaChevronDown className="ml-2" />
@@ -368,7 +366,7 @@ const Navbar = () => {
                             <div className="text-black dark:text-white rounded-lg shadow-lg">
                                 <button
                                     onClick={() => changeLanguage('es')}
-                                    className="flex items-center px-4 py-2 hover:bg-gray-200 dark:hover:bg-gray-600 hover:font-bold hover:text-blue-500 dark:hover:text-blue-400 text-left w-full"
+                                    className="flex items-center px-4 py-2 hover:bg-gray-200 dark:hover:bg-gray-600 hover:font-bold hover:text-blue-500 dark:hover:text-orange-400 text-left w-full"
                                 >
                                     <img
                                         src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/mx.svg"
@@ -379,7 +377,7 @@ const Navbar = () => {
                                 </button>
                                 <button
                                     onClick={() => changeLanguage('en')}
-                                    className="flex items-center px-4 py-2 hover:bg-gray-200 dark:hover:bg-gray-600 hover:font-bold hover:text-blue-500 dark:hover:text-blue-400 text-left w-full"
+                                    className="flex items-center px-4 py-2 hover:bg-gray-200 dark:hover:bg-gray-600 hover:font-bold hover:text-blue-500 dark:hover:text-orange-400 text-left w-full"
                                 >
                                     <img
                                         src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/us.svg"
@@ -399,44 +397,44 @@ const Navbar = () => {
                     <a
                         href="#hero"
                         onClick={(e) => { e.preventDefault(); scrollToSection('hero'); setIsOpen(false); }}
-                        className={`block px-4 py-2 hover:bg-gray-200 dark:hover:bg-gray-600 hover:font-bold hover:text-blue-500 dark:hover:text-blue-400 ${
-                            activeSection === "hero" ? "text-blue-500 font-bold underline" : ""
+                        className={`block px-4 py-2 hover:bg-gray-200 dark:hover:bg-gray-600 hover:font-bold hover:text-blue-500 dark:hover:text-orange-400 ${
+                            activeSection === "hero" ? "text-blue-500 dark:text-orange-400 font-bold underline" : ""
                         }`}
                     >
                         {t('home')}
                     </a>
                     <a
-                        href="#about"
-                        onClick={(e) => { e.preventDefault(); scrollToSection('about'); setIsOpen(false); }}
-                        className={`block px-4 py-2 hover:bg-gray-200 dark:hover:bg-gray-600 hover:font-bold hover:text-blue-500 dark:hover:text-blue-400 ${
-                            activeSection === "about" ? "text-blue-500 font-bold underline" : ""
+                        href="#websolutions"
+                        onClick={(e) => { e.preventDefault(); scrollToSection('websolutions'); setIsOpen(false); }}
+                        className={`block px-4 py-2 hover:bg-gray-200 dark:hover:bg-gray-600 hover:font-bold hover:text-blue-500 dark:hover:text-orange-400 ${
+                            activeSection === "websolutions" ? "text-blue-500 dark:text-orange-400 font-bold underline" : ""
                         }`}
                     >
-                        {t('about')}
+                        {t('WebSolutions')}
                     </a>
                     <a
-                        href="#skills"
-                        onClick={(e) => { e.preventDefault(); scrollToSection('skills'); setIsOpen(false); }}
-                        className={`block px-4 py-2 hover:bg-gray-200 dark:hover:bg-gray-600 hover:font-bold hover:text-blue-500 dark:hover:text-blue-400 ${
-                            activeSection === "skills" ? "text-blue-500 font-bold underline" : ""
+                        href="#testimonials"
+                        onClick={(e) => { e.preventDefault(); scrollToSection('testimonials'); setIsOpen(false); }}
+                        className={`block px-4 py-2 hover:bg-gray-200 dark:hover:bg-gray-600 hover:font-bold hover:text-blue-500 dark:hover:text-orange-400 ${
+                            activeSection === "testimonials" ? "text-blue-500 dark:text-orange-400 font-bold underline" : ""
                         }`}
                     >
-                        {t('skills')}
+                        {t('testimonials')}
                     </a>
                     <a
-                        href="#projects"
-                        onClick={(e) => { e.preventDefault(); scrollToSection('projects'); setIsOpen(false); }}
-                        className={`block px-4 py-2 hover:bg-gray-200 dark:hover:bg-gray-600 hover:font-bold hover:text-blue-500 dark:hover:text-blue-400 ${
-                            activeSection === "projects" ? "text-blue-500 font-bold underline" : ""
+                        href="#faq"
+                        onClick={(e) => { e.preventDefault(); scrollToSection('faq'); setIsOpen(false); }}
+                        className={`block px-4 py-2 hover:bg-gray-200 dark:hover:bg-gray-600 hover:font-bold hover:text-blue-500 dark:hover:text-orange-400 ${
+                            activeSection === "faq" ? "text-blue-500 dark:text-orange-400 font-bold underline" : ""
                         }`}
                     >
-                        {t('projects')}
+                        {t('FAQ')}
                     </a>
                     <a
-                        href="#Resume"
-                        onClick={(e) => { e.preventDefault(); scrollToSection('Resume'); setIsOpen(false); }}
-                        className={`block px-4 py-2 hover:bg-gray-200 dark:hover:bg-gray-600 hover:font-bold hover:text-blue-500 dark:hover:text-blue-400 ${
-                            activeSection === "Resume" ? "text-blue-500 font-bold underline" : ""
+                        href="#resume"
+                        onClick={(e) => { e.preventDefault(); scrollToSection('resume'); setIsOpen(false); }}
+                        className={`block px-4 py-2 hover:bg-gray-200 dark:hover:bg-gray-600 hover:font-bold hover:text-blue-500 dark:hover:text-orange-400 ${
+                            activeSection === "resume" ? "text-blue-500 dark:text-orange-400 font-bold underline" : ""
                         }`}
                     >
                         {t('resume')}
@@ -444,8 +442,8 @@ const Navbar = () => {
                     <a
                         href="#contact"
                         onClick={(e) => { e.preventDefault(); scrollToSection('contact'); setIsOpen(false); }}
-                        className={`block px-4 py-2 hover:bg-gray-200 dark:hover:bg-gray-600 hover:font-bold hover:text-blue-500 dark:hover:text-blue-400 ${
-                            activeSection === "contact" ? "text-blue-500 font-bold underline" : ""
+                        className={`block px-4 py-2 hover:bg-gray-200 dark:hover:bg-gray-600 hover:font-bold hover:text-blue-500 dark:hover:text-orange-400 ${
+                            activeSection === "contact" ? "text-blue-500 dark:text-orange-400 font-bold underline" : ""
                         }`}
                     >
                         {t('contact')}
@@ -453,7 +451,7 @@ const Navbar = () => {
                     <div className="relative">
                         <button
                             onClick={() => setMobileDropdownOpen(!mobileDropdownOpen)}
-                            className="block px-4 py-2 hover:bg-gray-200 dark:hover:bg-gray-600 hover:font-bold hover:text-blue-500 dark:hover:text-blue-400 flex items-center justify-between w-full"
+                            className="block px-4 py-2 hover:bg-gray-200 dark:hover:bg-gray-600 hover:font-bold hover:text-blue-500 dark:hover:text-orange-400 flex items-center justify-between w-full"
                         >
                             {t('language')}
                             <FaChevronDown className="ml-2" />
@@ -462,7 +460,7 @@ const Navbar = () => {
                             <div className="text-black dark:text-white rounded-lg shadow-lg">
                                 <button
                                     onClick={() => changeLanguage('es')}
-                                    className="flex items-center px-4 py-2 hover:bg-gray-200 dark:hover:bg-gray-600 hover:font-bold hover:text-blue-500 dark:hover:text-blue-400 text-left w-full"
+                                    className="flex items-center px-4 py-2 hover:bg-gray-200 dark:hover:bg-gray-600 hover:font-bold hover:text-blue-500 dark:hover:text-orange-400 text-left w-full"
                                 >
                                     <img
                                         src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/mx.svg"
@@ -473,7 +471,7 @@ const Navbar = () => {
                                 </button>
                                 <button
                                     onClick={() => changeLanguage('en')}
-                                    className="flex items-center px-4 py-2 hover:bg-gray-200 dark:hover:bg-gray-600 hover:font-bold hover:text-blue-500 dark:hover:text-blue-400 text-left w-full"
+                                    className="flex items-center px-4 py-2 hover:bg-gray-200 dark:hover:bg-gray-600 hover:font-bold hover:text-blue-500 dark:hover:text-orange-400 text-left w-full"
                                 >
                                     <img
                                         src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/us.svg"
@@ -489,7 +487,6 @@ const Navbar = () => {
             )}
         </nav>
     );
-
 };
 
 export default Navbar;

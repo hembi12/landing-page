@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React from "react";
 import { useTranslation } from "react-i18next";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -12,10 +12,10 @@ import AppointmentsImage from "../assets/images/appointments.svg";
 import HomeServicesImage from "../assets/images/home-services.svg";
 import TourismImage from "../assets/images/tourism.svg";
 import EntertainmentImage from "../assets/images/entertainment.svg";
+import InfluencersImage from "../assets/images/influencer.svg"; // Nueva imagen
 
-const About = () => {
+const WebSolutions = () => {
     const { t } = useTranslation();
-    const sliderRef = useRef(null);
 
     const sliderSettings = {
         dots: true,
@@ -75,26 +75,31 @@ const About = () => {
             description: t("entertainmentDesc"),
             image: EntertainmentImage,
         },
+        {
+            title: t("influencers"), // Nuevo título para influencers
+            description: t("influencersDesc"), // Nueva descripción
+            image: InfluencersImage, // Imagen recién agregada
+        },
     ];
 
     return (
         <section
-            id="about"
+            id="websolutions"
             className="bg-[#f5f4f7] dark:bg-gray-800 text-black dark:text-white py-20 transition-colors duration-500"
         >
             <div className="container mx-auto px-4">
                 <h2 className="bg-gradient-to-r from-[#007AFF] via-[#AF52DE] to-[#FF9500] bg-clip-text text-transparent text-4xl sm:text-5xl font-bold text-center mb-12">
-                    {t("aboutTitle")}
+                    {t("WebSolutionsTitle")}
                 </h2>
 
                 <p className="text-lg text-center text-gray-800 dark:text-white mb-12 px-4">
-                    {t("aboutDescription")}
+                    {t("WebSolutionsDescription")}
                 </p>
 
                 <Slider {...sliderSettings}>
                     {services.map((service, index) => (
                         <div key={index} className="px-4 pb-8"> {/* Mantén el padding-bottom */}
-                            <div className="bg-gray-100 dark:bg-gray-600 rounded-lg shadow-xl p-6 text-left transition-transform duration-300 hover:scale-105">
+                            <div className="bg-gray-200 dark:bg-gray-600 rounded-lg shadow-lg p-6 text-left transition-transform duration-300 hover:scale-105">
                                 <p className="text-md font-semibold text-[#007AFF] dark:text-[#FF9500] mb-2">
                                     {t("customDesignedFor")}
                                 </p>
@@ -164,4 +169,4 @@ const About = () => {
     );
 };
 
-export default About;
+export default WebSolutions;

@@ -5,9 +5,9 @@ import { useTranslation } from 'react-i18next';
 
 const Navbar = lazy(() => import("./components/Navbar"));
 const Hero = lazy(() => import("./components/Hero"));
-const About = lazy(() => import("./components/About"));
-const Skills = lazy(() => import("./components/Skills"));
-const Projects = lazy(() => import("./components/Projects"));
+const WebSolutions = lazy(() => import("./components/WebSolutions"));
+const Testimonials = lazy(() => import("./components/Testimonials"));
+const FAQ = lazy(() => import("./components/FAQ"));
 const Resume = lazy(() => import("./components/Resume"));
 const Contact = lazy(() => import("./components/Contact"));
 const Footer = lazy(() => import("./components/Footer"));
@@ -35,9 +35,9 @@ function App() {
             element={
               <>
                 <Hero />
-                <About />
-                <Skills />
-                <Projects />
+                <WebSolutions />
+                <Testimonials />
+                <FAQ />
                 <Resume />
                 <Contact />
               </>
