@@ -156,7 +156,7 @@ const Navbar = () => {
                             <div className="relative">
                                 <button
                                     onClick={() => setDropdownOpen(!dropdownOpen)}
-                                    className={`flex items-center hover:text-blue-500 ${
+                                    className={`flex items-center hover:text-blue-500 dark:hover:text-orange-400 ${
                                         dropdownOpen ? "text-blue-500 font-bold underline" : ""
                                     }`}
                                 >
@@ -224,7 +224,7 @@ const Navbar = () => {
                             <a
                                 href="#hero"
                                 onClick={(e) => { e.preventDefault(); scrollToSection('hero'); }}
-                                className={`hover:text-blue-500 ${
+                                className={`hover:text-blue-500 hover:text-orange-400 ${
                                     activeSection === "hero" ? "text-blue-500 dark:text-orange-400 font-bold underline" : ""
                                 }`}
                             >
@@ -233,7 +233,7 @@ const Navbar = () => {
                             <a
                                 href="#websolutions"
                                 onClick={(e) => { e.preventDefault(); scrollToSection('websolutions'); }}
-                                className={`hover:text-blue-500 ${
+                                className={`hover:text-blue-500 hover:text-orange-400 ${
                                     activeSection === "websolutions" ? "text-blue-500 dark:text-orange-400 font-bold underline" : ""
                                 }`}
                             >
@@ -242,7 +242,7 @@ const Navbar = () => {
                             <a
                                 href="#testimonials"
                                 onClick={(e) => { e.preventDefault(); scrollToSection('testimonials'); }}
-                                className={`hover:text-blue-500 ${
+                                className={`hover:text-blue-500 hover:text-orange-400 ${
                                     activeSection === "testimonials" ? "text-blue-500 dark:text-orange-400 font-bold underline" : ""
                                 }`}
                             >
@@ -251,7 +251,7 @@ const Navbar = () => {
                             <a
                                 href="#faq"
                                 onClick={(e) => { e.preventDefault(); scrollToSection('faq'); }}
-                                className={`hover:text-blue-500 ${
+                                className={`hover:text-blue-500 hover:text-orange-400 ${
                                     activeSection === "faq" ? "text-blue-500 dark:text-orange-400 font-bold underline" : ""
                                 }`}
                             >
@@ -260,7 +260,7 @@ const Navbar = () => {
                             <a
                                 href="#resume"
                                 onClick={(e) => { e.preventDefault(); scrollToSection('resume'); }}
-                                className={`hover:text-blue-500 ${
+                                className={`hover:text-blue-500 hover:text-orange-400 ${
                                     activeSection === "resume" ? "text-blue-500 dark:text-orange-400 font-bold underline" : ""
                                 }`}
                             >
@@ -269,7 +269,7 @@ const Navbar = () => {
                             <a
                                 href="#contact"
                                 onClick={(e) => { e.preventDefault(); scrollToSection('contact'); }}
-                                className={`hover:text-blue-500 ${
+                                className={`hover:text-blue-500 hover:text-orange-400 ${
                                     activeSection === "contact" ? "text-blue-500 dark:text-orange-400 font-bold underline" : ""
                                 }`}
                             >
@@ -278,7 +278,7 @@ const Navbar = () => {
                             <div className="relative">
                                 <button
                                     onClick={() => setDropdownOpen(!dropdownOpen)}
-                                    className={`flex items-center hover:text-blue-500 ${
+                                    className={`flex items-center hover:text-blue-500 dark:hover:text-orange-400 ${
                                         dropdownOpen ? "text-blue-500 dark:text-orange-400 font-bold underline" : ""
                                     }`}
                                 >

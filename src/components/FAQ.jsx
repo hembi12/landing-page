@@ -57,10 +57,16 @@ const FAQ = () => {
                     {faqs.map((faq, index) => (
                         <div
                             key={index}
-                            className="border border-gray-600 dark:border-gray-400 rounded-lg"
+                            className="border border-gray-600 dark:border-gray-400 rounded-lg overflow-hidden transition-colors duration-300"
                         >
                             <button
-                                className="w-full flex justify-between items-center px-6 py-4 text-left focus:outline-none"
+                                className={`group w-full flex justify-between items-center px-6 py-4 text-left focus:outline-none transition-colors duration-300
+                                    ${
+                                        openIndex === index
+                                            ? "bg-blue-600 dark:bg-orange-500 text-white"
+                                            : "hover:bg-blue-500 dark:hover:bg-orange-400 hover:text-white"
+                                    }
+                                `}
                                 onClick={() => toggleFAQ(index)}
                                 aria-expanded={openIndex === index}
                                 aria-controls={`faq-answer-${index}`}
@@ -69,15 +75,15 @@ const FAQ = () => {
                                     {faq.question}
                                 </span>
                                 {openIndex === index ? (
-                                    <FaChevronUp className="text-blue-500 dark:text-orange-400" />
+                                    <FaChevronUp className="text-blue-500 dark:text-orange-400 group-hover:text-white group-active:text-white transition-colors duration-300" />
                                 ) : (
-                                    <FaChevronDown className="text-blue-500 dark:text-orange-400" />
+                                    <FaChevronDown className="text-blue-500 dark:text-orange-400 group-hover:text-white group-active:text-white transition-colors duration-300" />
                                 )}
                             </button>
                             {openIndex === index && (
                                 <div
                                     id={`faq-answer-${index}`}
-                                    className="px-6 py-4 bg-gray-50 dark:bg-gray-700"
+                                    className="px-6 py-4 bg-gray-50 dark:bg-gray-700 transition-colors duration-300"
                                 >
                                     <p className="text-gray-700 dark:text-gray-200">
                                         {faq.answer}
