@@ -7,15 +7,12 @@
     "home": "Inicio",
     "WebSolutions": "Soluciones Web",
     "testimonials": "Testimonios",
-    "projects": "Proyectos",
-    "resume": "Curriculum",
-    "contact": "Contáctame",
+    "contact": "Contáctanos",
     "loading": "Cargando...",
     "languageAlreadySelected": "Este idioma ya está seleccionado.",
     "heroTitle": "¿Tu negocio aún no tiene presencia en línea?",
     "heroSubtitle": "Haz crecer tus ventas, atrae más clientes y destaca de la competencia con un sitio web profesional, rápido y optimizado.",
     "viewProjects": "Ver Proyectos",
-    "contactMe": "Contáctame",
     "WebSolutionsTitle": "Creamos Páginas Web Adaptadas a Tus Necesidades",
     "WebSolutionsDescription": "Descubre las soluciones web que ofrecemos para distintos tipos de negocios. Llevamos tu presencia digital al siguiente nivel.",
     "customDesignedFor": "Diseños a medida para",
@@ -55,32 +52,73 @@
     "testimonial8Highlight": "Mayor conexión con la audiencia",
     "testimonial8": "Como influencer, mi sitio web personal me ayuda a conectar con mi audiencia y promocionar mis colaboraciones de forma profesional.",
     "dateLabel": "Fecha:",
-    "faqTitle": "Preguntas Frecuentes",
-    "faqDescription": "Aquí encontrarás las respuestas a las preguntas más comunes sobre nuestros servicios y página web.",
-    "faq1": {
-        "question": "¿Cómo puedo contratar sus servicios?",
-        "answer": "Puedes contratar nuestros servicios directamente a través de nuestro sitio web, donde encontrarás un formulario de contacto o la opción de agendar una consulta."
+    "FAQ": "Preguntas frecuentes",
+    "FAQTitle": "Preguntas frecuentes",
+    "FAQDescription": "Resolvemos las 8 principales dudas que podrías tener al considerar contratar nuestros servicios de desarrollo web.",
+    "FAQDoubts": {
+        "onlineStores": {
+            "title": "¿Por qué debería tener una tienda en línea?",
+            "description": "Descubre los beneficios de tener una tienda en línea para incrementar tus ventas y llegar a una audiencia global.",
+            "link": "/FAQ/online-stores"
+        },
+        "freelancers": {
+            "title": "¿Cómo una página web puede ayudarme como freelancer?",
+            "description": "Aprende cómo una página web profesional puede atraer más clientes y consolidar tu presencia en el mercado freelance.",
+            "link": "/FAQ/freelancers"
+        },
+        "entrepreneurs": {
+            "title": "¿Es esencial una página web para emprendedores?",
+            "description": "Explora la importancia de una página web para establecer la credibilidad y expandir tu negocio.",
+            "link": "/FAQ/entrepreneurs"
+        },
+        "appointments": {
+            "title": "¿Cómo gestionar citas en línea mejora mi negocio?",
+            "description": "Conoce las ventajas de implementar un sistema de citas en línea para optimizar la gestión y satisfacción de tus clientes.",
+            "link": "/FAQ/appointments"
+        },
+        "homeServices": {
+            "title": "¿Por qué invertir en una página web para servicios a domicilio?",
+            "description": "Descubre cómo aumentar tus solicitudes de servicios a domicilio y mejorar tu eficiencia.",
+            "link": "/FAQ/home-services"
+        },
+        "tourism": {
+            "title": "¿Cómo una página web beneficia a las empresas de turismo?",
+            "description": "Aprende cómo una página web atractiva puede impulsar las reservas y la visibilidad de tu empresa de turismo.",
+            "link": "/FAQ/tourism"
+        },
+        "entertainment": {
+            "title": "¿Por qué es importante una página web para el sector del entretenimiento?",
+            "description": "Explora cómo una página web puede aumentar la interacción con tu audiencia y promover tus eventos de entretenimiento.",
+            "link": "/FAQ/entertainment"
+        },
+        "influencer": {
+            "title": "¿Cómo una página web puede potenciar mi carrera como influencer?",
+            "description": "Descubre las ventajas de tener una página web personal para conectar con tu audiencia y atraer colaboraciones.",
+            "link": "/FAQ/influencer"
+        }
     },
-    "faq2": {
-        "question": "¿Ofrecen soporte técnico después de la implementación?",
-        "answer": "Sí, ofrecemos soporte técnico continuo para asegurar que tu sitio web funcione perfectamente y resolver cualquier inconveniente que puedas tener."
-    },
-    "faq3": {
-        "question": "¿Cuánto tiempo toma desarrollar un sitio web?",
-        "answer": "El tiempo de desarrollo varía según las necesidades específicas del proyecto, pero generalmente tarda entre 4 a 8 semanas desde la planificación hasta la entrega final."
-    },
-    "faq4": {
-        "question": "¿Pueden ayudarme con el posicionamiento en buscadores (SEO)?",
-        "answer": "Por supuesto, implementamos estrategias de SEO durante el desarrollo para mejorar la visibilidad de tu sitio web en los motores de búsqueda."
-    },
-    "faq5": {
-        "question": "¿Ofrecen diseños personalizados?",
-        "answer": "Sí, cada sitio web que desarrollamos es único y se adapta a la identidad y objetivos de tu marca, asegurando una presencia en línea distintiva."
-    },
-    "resumeDescription": "En esta sección, puedes visualizar mi currículum o descargarlo en formato PDF. Este documento detalla mi experiencia profesional, habilidades, educación y más.",
-    "viewResume": "Ver Curriculum",
-    "downloadResume": "Descargar",
-    "resumeImageAlt": "Curriculum",
+    "readMore": "Leer Más",
+    "benefits": "Beneficios",
+    "BenefitsTitle": "Nuestros Beneficios",
+    "BenefitsDescription": "Descubre los beneficios que ofrecemos al utilizar nuestros servicios, diseñados para brindarte la mejor experiencia.",
+    "benefit": "Aprovecha de",
+    "learnMore": "Aprende más",
+    "interestFree": "Meses sin intereses",
+    "interestFreeDesc": "El acceso a nuestros servicios sin preocupaciones financieras, permitiendo a los clientes pagar en cómodos plazos.",
+    "customDesign": "Diseños a medida",
+    "customDesignDesc": "Ofrecemos soluciones personalizadas que se adapten perfectamente a las necesidades y preferencias individuales de cada cliente.",
+    "continuousSupport": "Soporte continuo",
+    "continuousSupportDesc": "Proporcionamos asistencia técnica y atención al cliente constante para garantizar una experiencia sin inconvenientes.",
+    "fastDelivery": "Entrega rápida y eficiente",
+    "fastDeliveryDesc": "Aseguramos tiempos de entrega cortos para que los clientes reciban sus productos o servicios de manera oportuna.",
+    "extendedWarranty": "Garantía extendida",
+    "extendedWarrantyDesc": "Ofrecemos una garantía que cubra nuestros servicios por un período más largo, brindando mayor confianza y seguridad a los clientes.",
+    "personalizedConsulting": "Asesoría personalizada",
+    "personalizedConsultingDesc": "Para ayudar a los clientes a tomar las mejores decisiones según sus necesidades específicas.",
+    "freeUpdates": "Actualizaciones gratuitas",
+    "freeUpdatesDesc": "De nuestros servicios sin costo adicional, manteniendo a los clientes siempre al día con las últimas novedades.",
+    "loyaltyPrograms": "Programas de recompensas",
+    "loyaltyProgramsDesc": "Un sistema de puntos o beneficios exclusivos para clientes recurrentes, incentivando la lealtad y premiando su preferencia.",
     "rightsReserved": "© {{year}} Héctor Martil. Todos los derechos reservados.",
     "privacyPolicyTitle": "Política de Privacidad",
     "privacyPolicyParagraph1": "En <strong>mi página web</strong>, nos comprometemos a proteger tu privacidad. Este documento detalla cómo recopilamos, usamos y protegemos la información que compartes con nosotros.",

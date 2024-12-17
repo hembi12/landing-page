@@ -1,20 +1,22 @@
+// src/components/Benefits.jsx
+
 import React from "react";
 import { useTranslation } from "react-i18next";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-// Importación de imágenes de servicios
-import OnlineStoresImage from "../assets/images/online-stores.svg";
-import FreelancersImage from "../assets/images/freelancers.svg";
-import EntrepreneursImage from "../assets/images/entrepreneurs.svg";
-import AppointmentsImage from "../assets/images/appointments.svg";
-import HomeServicesImage from "../assets/images/home-services.svg";
-import TourismImage from "../assets/images/tourism.svg";
-import EntertainmentImage from "../assets/images/entertainment.svg";
-import InfluencersImage from "../assets/images/influencer.svg";
+// Importación de imágenes de beneficios
+import InterestFreeImage from "../assets/images/interest-free.svg";
+import CustomDesignImage from "../assets/images/custom-design.svg";
+import ContinuousSupportImage from "../assets/images/continuous-support.svg";
+import FastDeliveryImage from "../assets/images/fast-delivery.svg";
+import ExtendedWarrantyImage from "../assets/images/extended-warranty.svg";
+import PersonalizedConsultingImage from "../assets/images/personalized-consulting.svg";
+import FreeUpdatesImage from "../assets/images/free-updates.svg";
+import LoyaltyProgramsImage from "../assets/images/loyalty-programs.svg";
 
-const WebSolutions = () => {
+const Benefits = () => {
     const { t } = useTranslation();
 
     const sliderSettings = {
@@ -39,84 +41,84 @@ const WebSolutions = () => {
         ],
     };
 
-    const services = [
+    const benefits = [
         {
-            title: t("onlineStores"),
-            description: t("onlineStoresDesc"),
-            image: OnlineStoresImage,
+            title: t("interestFree"),
+            description: t("interestFreeDesc"),
+            image: InterestFreeImage,
         },
         {
-            title: t("freelancers"),
-            description: t("freelancersDesc"),
-            image: FreelancersImage,
+            title: t("customDesign"),
+            description: t("customDesignDesc"),
+            image: CustomDesignImage,
         },
         {
-            title: t("newEntrepreneurs"),
-            description: t("newEntrepreneursDesc"),
-            image: EntrepreneursImage,
+            title: t("continuousSupport"),
+            description: t("continuousSupportDesc"),
+            image: ContinuousSupportImage,
         },
         {
-            title: t("appointmentsServices"),
-            description: t("appointmentsServicesDesc"),
-            image: AppointmentsImage,
+            title: t("fastDelivery"),
+            description: t("fastDeliveryDesc"),
+            image: FastDeliveryImage,
         },
         {
-            title: t("homeServices"),
-            description: t("homeServicesDesc"),
-            image: HomeServicesImage,
+            title: t("extendedWarranty"),
+            description: t("extendedWarrantyDesc"),
+            image: ExtendedWarrantyImage,
         },
         {
-            title: t("tourismCompanies"),
-            description: t("tourismCompaniesDesc"),
-            image: TourismImage,
+            title: t("personalizedConsulting"),
+            description: t("personalizedConsultingDesc"),
+            image: PersonalizedConsultingImage,
         },
         {
-            title: t("entertainment"),
-            description: t("entertainmentDesc"),
-            image: EntertainmentImage,
+            title: t("freeUpdates"),
+            description: t("freeUpdatesDesc"),
+            image: FreeUpdatesImage,
         },
         {
-            title: t("influencers"), // Nuevo título para influencers
-            description: t("influencersDesc"), // Nueva descripción
-            image: InfluencersImage, // Imagen recién agregada
+            title: t("loyaltyPrograms"),
+            description: t("loyaltyProgramsDesc"),
+            image: LoyaltyProgramsImage,
         },
     ];
 
     return (
         <section
-            id="websolutions"
+            id="benefits"
             className="bg-[#f5f4f7] dark:bg-gray-800 text-black dark:text-white py-20 transition-colors duration-500"
         >
             <div className="container mx-auto px-4">
                 <h2 className="bg-gradient-to-r from-[#007AFF] via-[#AF52DE] to-[#FF9500] bg-clip-text text-transparent text-4xl sm:text-5xl font-bold text-center mb-12">
-                    {t("WebSolutionsTitle")}
+                    {t("BenefitsTitle")}
                 </h2>
 
                 <p className="text-lg text-center text-gray-800 dark:text-white mb-12 px-4">
-                    {t("WebSolutionsDescription")}
+                    {t("BenefitsDescription")}
                 </p>
 
                 <Slider {...sliderSettings}>
-                    {services.map((service, index) => (
-                        <div key={index} className="px-4 pb-8 mt-8"> {/* Mantén el padding-bottom */}
+                    {benefits.map((benefit, index) => (
+                        <div key={index} className="px-4 pb-8 mt-8">
                             <div className="bg-gray-200 dark:bg-gray-600 rounded-lg shadow-lg p-6 text-left transition-transform duration-300 hover:scale-105">
                                 <p className="text-md font-semibold text-[#007AFF] dark:text-[#FF9500] mb-2">
-                                    {t("customDesignedFor")}
+                                    {t("benefit")}
                                 </p>
                                 <h3 className="text-2xl font-bold mb-4 text-gray-800 dark:text-white">
-                                    {service.title}
+                                    {benefit.title}
                                 </h3>
                                 <p className="text-gray-800 dark:text-gray-100 mb-4">
-                                    {service.description}
+                                    {benefit.description}
                                 </p>
                                 <img
-                                    src={service.image}
-                                    alt={service.title}
+                                    src={benefit.image}
+                                    alt={benefit.title}
                                     className="w-full h-25 object-contain mx-auto"
                                 />
                                 {/* Texto con flecha */}
                                 <p className="text-left text-[#007AFF] dark:text-[#FF9500] font-medium mt-4 cursor-pointer hover:underline hover:text-blue-700 dark:hover:text-orange-300 inline-flex items-center">
-                                    {t("makeItHappen")}
+                                    {t("learnMore")}
                                     <span className="ml-2 flex items-center justify-center">
                                         {/* SVG de flecha */}
                                         <svg
@@ -169,4 +171,4 @@ const WebSolutions = () => {
     );
 };
 
-export default WebSolutions;
+export default Benefits;

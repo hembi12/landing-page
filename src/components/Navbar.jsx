@@ -51,7 +51,8 @@ const Navbar = () => {
     useEffect(() => {
         if (isPrivacyPolicy) return;
         const handleScroll = () => {
-            const sections = ["hero", "websolutions", "testimonials", "faq", "resume", "contact"];
+            // Agregar 'benefits' a las secciones
+            const sections = ["hero", "websolutions", "testimonials", "benefits", "FAQ", "contact"];
             const scrollPosition = window.scrollY;
 
             sections.forEach((section) => {
@@ -157,7 +158,7 @@ const Navbar = () => {
                                 <button
                                     onClick={() => setDropdownOpen(!dropdownOpen)}
                                     className={`flex items-center hover:text-blue-500 dark:hover:text-orange-400 ${
-                                        dropdownOpen ? "text-blue-500 font-bold underline" : ""
+                                        dropdownOpen ? "text-blue-500 dark:text-orange-400 font-bold underline" : ""
                                     }`}
                                 >
                                     {t('language')}
@@ -224,7 +225,7 @@ const Navbar = () => {
                             <a
                                 href="#hero"
                                 onClick={(e) => { e.preventDefault(); scrollToSection('hero'); }}
-                                className={`hover:text-blue-500 hover:text-orange-400 ${
+                                className={`hover:text-blue-500 dark:hover:text-orange-400 ${
                                     activeSection === "hero" ? "text-blue-500 dark:text-orange-400 font-bold underline" : ""
                                 }`}
                             >
@@ -233,7 +234,7 @@ const Navbar = () => {
                             <a
                                 href="#websolutions"
                                 onClick={(e) => { e.preventDefault(); scrollToSection('websolutions'); }}
-                                className={`hover:text-blue-500 hover:text-orange-400 ${
+                                className={`hover:text-blue-500 dark:hover:text-orange-400 ${
                                     activeSection === "websolutions" ? "text-blue-500 dark:text-orange-400 font-bold underline" : ""
                                 }`}
                             >
@@ -242,34 +243,34 @@ const Navbar = () => {
                             <a
                                 href="#testimonials"
                                 onClick={(e) => { e.preventDefault(); scrollToSection('testimonials'); }}
-                                className={`hover:text-blue-500 hover:text-orange-400 ${
+                                className={`hover:text-blue-500 dark:hover:text-orange-400 ${
                                     activeSection === "testimonials" ? "text-blue-500 dark:text-orange-400 font-bold underline" : ""
                                 }`}
                             >
                                 {t('testimonials')}
                             </a>
                             <a
-                                href="#faq"
-                                onClick={(e) => { e.preventDefault(); scrollToSection('faq'); }}
-                                className={`hover:text-blue-500 hover:text-orange-400 ${
-                                    activeSection === "faq" ? "text-blue-500 dark:text-orange-400 font-bold underline" : ""
+                                href="#benefits"
+                                onClick={(e) => { e.preventDefault(); scrollToSection('benefits'); }}
+                                className={`hover:text-blue-500 dark:hover:text-orange-400 ${
+                                    activeSection === "benefits" ? "text-blue-500 dark:text-orange-400 font-bold underline" : ""
+                                }`}
+                            >
+                                {t('benefits')}
+                            </a>
+                            <a
+                                href="#FAQ"
+                                onClick={(e) => { e.preventDefault(); scrollToSection('FAQ'); }}
+                                className={`hover:text-blue-500 dark:hover:text-orange-400 ${
+                                    activeSection === "FAQ" ? "text-blue-500 dark:text-orange-400 font-bold underline" : ""
                                 }`}
                             >
                                 {t('FAQ')}
                             </a>
                             <a
-                                href="#resume"
-                                onClick={(e) => { e.preventDefault(); scrollToSection('resume'); }}
-                                className={`hover:text-blue-500 hover:text-orange-400 ${
-                                    activeSection === "resume" ? "text-blue-500 dark:text-orange-400 font-bold underline" : ""
-                                }`}
-                            >
-                                {t('resume')}
-                            </a>
-                            <a
                                 href="#contact"
                                 onClick={(e) => { e.preventDefault(); scrollToSection('contact'); }}
-                                className={`hover:text-blue-500 hover:text-orange-400 ${
+                                className={`hover:text-blue-500 dark:hover:text-orange-400 ${
                                     activeSection === "contact" ? "text-blue-500 dark:text-orange-400 font-bold underline" : ""
                                 }`}
                             >
@@ -422,22 +423,22 @@ const Navbar = () => {
                         {t('testimonials')}
                     </a>
                     <a
-                        href="#faq"
-                        onClick={(e) => { e.preventDefault(); scrollToSection('faq'); setIsOpen(false); }}
+                        href="#benefits"
+                        onClick={(e) => { e.preventDefault(); scrollToSection('benefits'); setIsOpen(false); }}
                         className={`block px-4 py-2 hover:bg-gray-200 dark:hover:bg-gray-600 hover:font-bold hover:text-blue-500 dark:hover:text-orange-400 ${
-                            activeSection === "faq" ? "text-blue-500 dark:text-orange-400 font-bold underline" : ""
+                            activeSection === "benefits" ? "text-blue-500 dark:text-orange-400 font-bold underline" : ""
+                        }`}
+                    >
+                        {t('benefits')}
+                    </a>
+                    <a
+                        href="#FAQ"
+                        onClick={(e) => { e.preventDefault(); scrollToSection('FAQ'); setIsOpen(false); }}
+                        className={`block px-4 py-2 hover:bg-gray-200 dark:hover:bg-gray-600 hover:font-bold hover:text-blue-500 dark:hover:text-orange-400 ${
+                            activeSection === "FAQ" ? "text-blue-500 dark:text-orange-400 font-bold underline" : ""
                         }`}
                     >
                         {t('FAQ')}
-                    </a>
-                    <a
-                        href="#resume"
-                        onClick={(e) => { e.preventDefault(); scrollToSection('resume'); setIsOpen(false); }}
-                        className={`block px-4 py-2 hover:bg-gray-200 dark:hover:bg-gray-600 hover:font-bold hover:text-blue-500 dark:hover:text-orange-400 ${
-                            activeSection === "resume" ? "text-blue-500 dark:text-orange-400 font-bold underline" : ""
-                        }`}
-                    >
-                        {t('resume')}
                     </a>
                     <a
                         href="#contact"
@@ -487,6 +488,7 @@ const Navbar = () => {
             )}
         </nav>
     );
+
 };
 
 export default Navbar;

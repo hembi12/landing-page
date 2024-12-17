@@ -5,10 +5,10 @@ import { useTranslation } from 'react-i18next';
 
 const Navbar = lazy(() => import("./components/Navbar"));
 const Hero = lazy(() => import("./components/Hero"));
+const Benefits = lazy(()=> import ("./components/Benefits"))
 const WebSolutions = lazy(() => import("./components/WebSolutions"));
 const Testimonials = lazy(() => import("./components/Testimonials"));
 const FAQ = lazy(() => import("./components/FAQ"));
-const Resume = lazy(() => import("./components/Resume"));
 const Contact = lazy(() => import("./components/Contact"));
 const Footer = lazy(() => import("./components/Footer"));
 const PrivacyPolicy = lazy(() => import("./pages/PrivacyPolicy"));
@@ -37,8 +37,8 @@ function App() {
                 <Hero />
                 <WebSolutions />
                 <Testimonials />
+                <Benefits />
                 <FAQ />
-                <Resume />
                 <Contact />
               </>
             }

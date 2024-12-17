@@ -7,9 +7,7 @@
     "home": "Home",
     "websolutions": "Web Solutions",
     "testimonials": "Testimonials",
-    "FAQ": "FAQ",
-    "resume": "Resume",
-    "contact": "Contact Me",
+    "contact": "Contact us",
     "loading": "Loading...",
     "languageAlreadySelected": "This language is already selected.",
     "heroTitle": "Does your business not yet have an online presence?",
@@ -55,32 +53,73 @@
     "testimonial8Highlight": "Greater connection with the audience",
     "testimonial8": "As an influencer, my personal website helps me connect with my audience and promote my collaborations in a professional manner.",
     "dateLabel": "Date:",
-    "faqTitle": "Frequently Asked Questions",
-    "faqDescription": "Here you will find answers to the most common questions about our services and website.",
-    "faq1": {
-        "question": "How can I hire your services?",
-        "answer": "You can hire our services directly through our website, where you will find a contact form or the option to schedule a consultation."
+    "FAQ": "FAQ",
+    "FAQTitle": "Frequently asked questions",
+    "FAQDescription": "We answer the top 8 questions you might have when considering hiring our web development services.",
+    "FAQDoubts": {
+        "onlineStores": {
+            "title": "Why should I have an online store?",
+            "description": "Discover the benefits of having an online store to increase your sales and reach a global audience.",
+            "link": "/FAQ/online-stores"
+        },
+        "freelancers": {
+            "title": "How can a website help me as a freelancer?",
+            "description": "Learn how a professional website can attract more clients and consolidate your presence in the freelance market.",
+            "link": "/FAQ/freelancers"
+        },
+        "entrepreneurs": {
+            "title": "Is a website essential for entrepreneurs?",
+            "description": "Explore the importance of a website to establish credibility and expand your business.",
+            "link": "/FAQ/entrepreneurs"
+        },
+        "appointments": {
+            "title": "How does managing online appointments improve my business?",
+            "description": "Learn about the benefits of implementing an online appointment system to optimize your customer management and satisfaction.",
+            "link": "/FAQ/appointments"
+        },
+        "homeServices": {
+            "title": "Why invest in a website for home services?",
+            "description": "Discover how a well-designed website can increase your home service requests and improve your efficiency.",
+            "link": "/FAQ/home-services"
+        },
+        "tourism": {
+            "title": "How does a website benefit tourism businesses?",
+            "description": "Learn how an attractive website can boost bookings and visibility for your tourism business.",
+            "link": "/FAQ/tourism"
+        },
+        "entertainment": {
+            "title": "Why is a website important for the entertainment sector?",
+            "description": "Explore how a website can increase engagement with your audience and promote your entertainment events.",
+            "link": "/FAQ/entertainment"
+        },
+        "influencer": {
+            "title": "How can a website boost my career as an influencer?",
+            "description": "Discover the benefits of having a personal website to connect with your audience and attract collaborations.",
+            "link": "/FAQ/influencer"
+        }
     },
-    "faq2": {
-        "question": "Do you offer technical support after implementation?",
-        "answer": "Yes, we offer ongoing technical support to ensure your website runs perfectly and resolve any issues you may have."
-    },
-    "faq3": {
-        "question": "How long does it take to develop a website?",
-        "answer": "Development time varies depending on the specific needs of the project, but generally takes between 4 to 8 weeks from planning to final delivery."
-    },
-    "faq4": {
-        "question": "Can you help me with search engine optimization (SEO)?",
-        "answer": "Of course, we implement SEO strategies during development to improve your website's visibility in search engines."
-    },
-    "faq5": {
-        "question": "Do you offer custom designs?",
-        "answer": "Yes, every website we develop is unique and tailored to your brand's identity and goals, ensuring a distinctive online presence."
-    },
-    "resumeDescription": "In this section, you can view my resume or download it in PDF format. This document details my professional experience, skills, education, and more.",
-    "viewResume": "View Resume",
-    "downloadResume": "Download",
-    "resumeImageAlt": "Resume",
+    "readMore": "Read More",
+    "benefits": "Benefits",
+    "BenefitsTitle": "Our Benefits",
+    "BenefitsDescription": "Discover the benefits we offer when using our services, designed to give you the best experience.",
+    "benefit": "Take advantage of",
+    "learnMore": "Learn more",
+    "interestFree": "Months without interest",
+    "interestFreeDesc": "Access to our services without financial worries, allowing customers to pay in comfortable installments.",
+    "customDesign": "Custom designs",
+    "customDesignDesc": "We offer customized solutions that perfectly fit the individual needs and preferences of each client.",
+    "continuousSupport": "Continuous support",
+    "continuousSupportDesc": "We provide constant technical assistance and customer support to ensure a hassle-free experience.",
+    "fastDelivery": "Fast and efficient delivery",
+    "fastDeliveryDesc": "We ensure short delivery times so that customers receive their products or services in a timely manner.",
+    "extendedWarranty": "Extended warranty",
+    "extendedWarrantyDesc": "We offer a warranty that covers our services for a longer period, providing greater confidence and security to customers.",
+    "personalizedConsulting": "Personalized advice",
+    "personalizedConsultingDesc": "To help customers make the best decisions based on their specific needs.",
+    "freeUpdates": "Free updates",
+    "freeUpdatesDesc": "We include improvements or updates to our services at no additional cost, keeping customers always up to date with the latest news.",
+    "loyaltyPrograms": "Rewards Programs",
+    "loyaltyProgramsDesc": "A system of points or exclusive benefits for recurring customers, encouraging loyalty and rewarding their preference.",
     "rightsReserved": "© {{year}} Héctor Martil. All rights reserved.",
     "privacyPolicyTitle": "Privacy Policy",
     "privacyPolicyParagraph1": "At <strong>my website</strong>, we are committed to protecting your privacy. This document details how we collect, use, and protect the information you share with us.",

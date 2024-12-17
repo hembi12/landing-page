@@ -137,7 +137,7 @@ const Testimonials = () => {
 
                 <Slider {...sliderSettings}>
                     {testimonials.map((testimonial, index) => (
-                        <div key={index} className="px-4 pb-8">
+                        <div key={index} className="px-4 pb-8 mt-8">
                             <div className="bg-gray-200 dark:bg-gray-600 rounded-lg shadow-lg p-6 text-left transition-transform duration-300 hover:scale-105">
                                 {/* Nombre de la persona */}
                                 <p className="text-md font-bold text-[#007AFF] dark:text-[#FF9500] mb-2">
