@@ -118,6 +118,7 @@ const Benefits = () => {
                                 />
                                 {/* Texto con flecha */}
                                 <p className="text-left text-[#007AFF] dark:text-[#FF9500] font-medium mt-4 cursor-pointer hover:underline hover:text-blue-700 dark:hover:text-orange-300 inline-flex items-center">
+                                    
                                     {t("learnMore")}
                                     <span className="ml-2 flex items-center justify-center">
                                         {/* SVG de flecha */}

@@ -153,7 +153,7 @@
         "messageRequired": "El mensaje no puede estar vacío.",
         "privacyConsentRequired": "Debes aceptar la Política de Privacidad."
     },
-    "contactDescription": "Si tienes alguna pregunta o propuesta, no dudes en enviarme un mensaje a través del formulario de contacto.",
+    "contactDescription": "Si tienes alguna consulta, no dudes en ponerte en contacto con nosotros a través de nuestro formulario de contacto.",
     "contact.successMessage": "Formulario enviado correctamente. Hemos enviado una confirmación a tu correo.",
     "contact.errorMessage": "Hubo un error al enviar el formulario. Por favor, inténtalo nuevamente.",
     "contact.successTitle": "Éxito",
@@ -168,7 +168,7 @@
         "subjectPlaceholder": "Selecciona un asunto",
         "subjectOptions": {
             "consulta": "Consulta",
-            "propuesta": "Propuesta",
+            "ayuda": "Ayuda",
             "otro": "Otro"
         },
         "messageLabel": "Mensaje:",

@@ -117,7 +117,7 @@ const FAQ = () => {
                                 <img
                                     src={doubt.image}
                                     alt={doubt.title}
-                                    className="w-full h-25 object-contain mx-auto mb-4"
+                                    className="w-full h-25 object-contain mx-auto"
                                 />
                                 {/* Enlace a la publicación del FAQ con efectos de hover y active */}
                                 <a
@@ -125,7 +125,7 @@ const FAQ = () => {
                                     className="text-left text-[#007AFF] dark:text-[#FF9500] font-medium mt-4 cursor-pointer hover:underline hover:text-blue-700 dark:hover:text-orange-300 inline-flex items-center"
                                 >
                                     {t("readMore")}
-                                    <span className="ml-2">
+                                    <span className="ml-2 flex items-center justify-center">
                                         {/* SVG de flecha */}
                                         <svg
                                             xmlns="http://www.w3.org/2000/svg"

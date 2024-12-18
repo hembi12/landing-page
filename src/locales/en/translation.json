@@ -154,7 +154,7 @@
         "messageRequired": "Message cannot be empty.",
         "privacyConsentRequired": "You must accept the Privacy Policy."
     },
-    "contactDescription": "If you have any questions or proposals, feel free to send me a message through the contact form.",
+    "contactDescription": "If you have any questions, please do not hesitate to contact us via our contact form. We will be happy to assist you.",
     "contact.successMessage": "Form submitted successfully. We have sent a confirmation to your email.",
     "contact.errorMessage": "There was an error sending the form. Please try again.",
     "contact.successTitle": "Success",
@@ -169,7 +169,7 @@
         "subjectPlaceholder": "Select a subject",
         "subjectOptions": {
             "consulta": "Inquiry",
-            "propuesta": "Proposal",
+            "ayuda": "Proposal",
             "otro": "Other"
         },
         "messageLabel": "Message:",

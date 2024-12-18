@@ -187,7 +187,7 @@ const Contact = () => {
                                 type="text"
                                 id="name"
                                 name="name"
-                                className="w-full bg-[#f5f4f7] dark:bg-gray-600 text-gray-600 dark:text-gray-200 border border-gray-400 dark:border-gray-500 rounded-lg py-3 px-4 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                className="w-full bg-[#f5f4f7] dark:bg-gray-600 text-gray-600 dark:text-gray-200 border border-gray-400 dark:border-gray-500 rounded-lg py-3 px-4 focus:outline-none focus:ring-2 focus:ring-blue-500 dark:focus:ring-orange-400"
                                 placeholder={t('form.namePlaceholder')}
                                 value={formData.name}
                                 onChange={handleChange}
@@ -208,7 +208,7 @@ const Contact = () => {
                                 type="email"
                                 id="email"
                                 name="email"
-                                className="w-full bg-[#f5f4f7] dark:bg-gray-600 text-gray-600 dark:text-gray-200 border border-gray-400 dark:border-gray-500 rounded-lg py-3 px-4 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                className="w-full bg-[#f5f4f7] dark:bg-gray-600 text-gray-600 dark:text-gray-200 border border-gray-400 dark:border-gray-500 rounded-lg py-3 px-4 focus:outline-none focus:ring-2 focus:ring-blue-500 dark:focus:ring-orange-400"
                                 placeholder={t('form.emailPlaceholder')}
                                 value={formData.email}
                                 onChange={handleChange}
@@ -228,7 +228,7 @@ const Contact = () => {
                             <select
                                 id="subject"
                                 name="subject"
-                                className="w-full bg-[#f5f4f7] dark:bg-gray-600 text-gray-600 dark:text-gray-200 border border-gray-400 dark:border-gray-500 rounded-lg py-3 px-4 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                className="w-full bg-[#f5f4f7] dark:bg-gray-600 text-gray-600 dark:text-gray-200 border border-gray-400 dark:border-gray-500 rounded-lg py-3 px-4 focus:outline-none focus:ring-2 focus:ring-blue-500 dark:focus:ring-orange-400"
                                 value={formData.subject}
                                 onChange={handleChange}
                             >
@@ -236,7 +236,7 @@ const Contact = () => {
                                     {t('form.subjectPlaceholder')}
                                 </option>
                                 <option value="consulta">{t('form.subjectOptions.consulta')}</option>
-                                <option value="propuesta">{t('form.subjectOptions.propuesta')}</option>
+                                <option value="ayuda">{t('form.subjectOptions.ayuda')}</option>
                                 <option value="otro">{t('form.subjectOptions.otro')}</option>
                             </select>
                             {errors.subject && (
@@ -255,7 +255,7 @@ const Contact = () => {
                                 id="message"
                                 name="message"
                                 rows="5"
-                                className="w-full bg-[#f5f4f7] dark:bg-gray-600 text-gray-600 dark:text-gray-200 border border-gray-400 dark:border-gray-500 rounded-lg py-3 px-4 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                className="w-full bg-[#f5f4f7] dark:bg-gray-600 text-gray-600 dark:text-gray-200 border border-gray-400 dark:border-gray-500 rounded-lg py-3 px-4 focus:outline-none focus:ring-2 focus:ring-blue-500 dark:focus:ring-orange-400"
                                 placeholder={t('form.messagePlaceholder')}
                                 value={formData.message}
                                 onChange={handleChange}
@@ -278,7 +278,7 @@ const Contact = () => {
                                     <Trans
                                         i18nKey="checkboxLabel"
                                         components={{
-                                            1: <a href="/privacy-policy" className="underline text-blue-500 dark:text-blue-400 hover:text-blue-600 dark:hover:text-blue-500" />
+                                            1: <a href="/privacy-policy" className="underline text-blue-500 dark:text-orange-400 hover:text-blue-600 dark:hover:text-orange-300" />
                                         }}
                                     />
                                 </span>
