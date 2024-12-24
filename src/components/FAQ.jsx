@@ -151,25 +151,30 @@ const FAQ = () => {
                 {/* Personalización con estilos inline */}
                 <style>
                     {`
-        /* Color de los slick dots por defecto */
-        .slick-dots li button:before {
-            color: #60a5fa !important; /* Color claro */
-            opacity: 0.5 !important;
-        }
-        .slick-dots li.slick-active button:before {
-            color: #007AFF !important; /* Dot activo */
-            opacity: 1 !important;
-        }
+    /* Color de los slick dots por defecto */
+    .slick-dots li button:before {
+        color: #60a5fa !important; /* Color claro */
+        opacity: 0.5 !important;
+    }
+    .slick-dots li.slick-active button:before {
+        color: #007AFF !important; /* Dot activo */
+        opacity: 1 !important;
+    }
 
-        /* Ajuste de color en modo oscuro */
-        .dark .slick-dots li button:before {
-            color: #FF9500 !important; /* Color naranja para dark mode */
-            opacity: 0.5 !important;
-        }
-        .dark .slick-dots li.slick-active button:before {
-            color: #FF9500 !important; /* Color naranja activo en dark mode */
-            opacity: 1 !important;
-        }
+    /* Ajuste de color en modo oscuro */
+    .dark .slick-dots li button:before {
+        color: #FF9500 !important; /* Color naranja para dark mode */
+        opacity: 0.5 !important;
+    }
+    .dark .slick-dots li.slick-active button:before {
+        color: #FF9500 !important; /* Color naranja activo en dark mode */
+        opacity: 1 !important;
+    }
+
+    /* Reducir el espacio entre los puntos de navegación */
+    .slick-dots li {
+        margin: 0 4px; /* Ajusta este valor para reducir/incrementar el espacio */
+    }
     `}
                 </style>
             </div>
