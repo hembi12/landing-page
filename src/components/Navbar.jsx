@@ -138,7 +138,7 @@ const Navbar = () => {
             <div className="container mx-auto flex justify-between items-center px-4 py-3">
                 {/* Contenedor para "HM" y el botón de modo oscuro */}
                 <div className="flex items-center">
-                    <div className="bg-gradient-to-r from-[#007AFF] via-[#AF52DE] to-[#FF9500] bg-clip-text text-transparent text-2xl font-bold">
+                    <div className="bg-gradient-to-r from-[#007AFF] via-[#8a4af3] to-[#FF9500] bg-clip-text text-transparent text-2xl font-bold">
                         Senda
                     </div>
                     {/* Botón para alternar modo oscuro */}

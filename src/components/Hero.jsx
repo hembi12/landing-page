@@ -20,7 +20,7 @@ const Hero = () => {
             <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
                 {/* Columna izquierda con título y subtítulo */}
                 <div className="text-center">
-                    <h1 className="bg-gradient-to-r from-[#007AFF] via-[#AF52DE] to-[#FF9500] bg-clip-text text-transparent text-4xl sm:text-5xl font-bold mb-4 leading-tight">
+                    <h1 className="bg-gradient-to-r from-[#007AFF] via-[#8a4af3] to-[#FF9500] bg-clip-text text-transparent text-4xl sm:text-5xl font-bold mb-4 leading-tight">
                         {t('heroTitle')}
                     </h1>
                     <p className="text-lg sm:text-xl text-gray-800 dark:text-white mb-6">
@@ -28,24 +28,24 @@ const Hero = () => {
                     </p>
                     <div className="flex justify-center items-center space-x-4">
                         <a
-                            href="#projects"
+                            href="#websolutions"
                             onClick={(e) => {
                                 e.preventDefault();
-                                scrollToSection("projects");
+                                scrollToSection("websolutions");
                             }}
                             className="bg-blue-600 text-white px-6 py-2 rounded-full font-bold shadow-lg hover:shadow-xl hover:bg-blue-500 transition duration-300"
                         >
-                            {t('viewProjects')}
+                            {t('viewWebSolutions')}
                         </a>
                         <a
-                            href="#contact"
+                            href="#benefits"
                             onClick={(e) => {
                                 e.preventDefault();
-                                scrollToSection("contact");
+                                scrollToSection("benefits");
                             }}
                             className="border border-blue-600 dark:border-white text-blue-600 dark:hover:border-blue-600 dark:text-white px-6 py-2 rounded-full font-bold shadow-lg hover:shadow-xl hover:bg-blue-600 dark:hover:bg-blue-600 hover:text-white dark:hover:text-white transition duration-300"
                         >
-                            {t('contactMe')}
+                            {t('benefits')}
                         </a>
                     </div>
                 </div>
