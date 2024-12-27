@@ -139,7 +139,7 @@ const Navbar = () => {
                 {/* Contenedor para "HM" y el botón de modo oscuro */}
                 <div className="flex items-center">
                     <div className="bg-gradient-to-r from-[#007AFF] via-[#8a4af3] to-[#FF9500] bg-clip-text text-transparent text-2xl font-bold">
-                        Senda
+                        Landing
                     </div>
                     {/* Botón para alternar modo oscuro */}
                     <button
