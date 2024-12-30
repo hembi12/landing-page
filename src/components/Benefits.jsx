@@ -114,7 +114,7 @@ const Benefits = () => {
                                 <img
                                     src={benefit.image}
                                     alt={benefit.title}
-                                    className="w-full h-25 object-contain mx-auto"
+                                    className="w-full h-22 object-contain mx-auto"
                                 />
                                 {/* Texto con flecha */}
                                 <p className="text-left text-[#007AFF] dark:text-[#FF9500] font-medium mt-4 cursor-pointer hover:underline hover:text-blue-700 dark:hover:text-orange-300 inline-flex items-center">

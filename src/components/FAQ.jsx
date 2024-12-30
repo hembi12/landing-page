@@ -117,7 +117,7 @@ const FAQ = () => {
                                 <img
                                     src={doubt.image}
                                     alt={doubt.title}
-                                    className="w-full h-25 object-contain mx-auto"
+                                    className="w-full h-22 object-contain mx-auto"
                                 />
                                 {/* Enlace a la publicación del FAQ con efectos de hover y active */}
                                 <a
