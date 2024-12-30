@@ -35,12 +35,12 @@ Ensure you have the following installed on your machine:
 
 1. Clone the repository:
     ```bash
-    git clone <repository-url>
+    git clone https://github.com/hembi12/landing-page
     ```
 
 2. Navigate to the project directory:
     ```bash
-    cd <project-folder>
+    cd landing-page
     ```
 
 3. Install dependencies:
@@ -122,6 +122,10 @@ Contributions are welcome! Please fork this repository and submit a pull request
 ## License
 
 This project is licensed under the MIT License. See the LICENSE file for more details.
+
+## Repository
+
+Find the repository here: [Landing Page Repository](https://github.com/hembi12/landing-page)
 
 ---
 
